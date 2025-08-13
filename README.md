@@ -1,20 +1,40 @@
-# Expo Router Example
+# Projeto React Native Hands-on
 
-Use [`expo-router`](https://docs.expo.dev/router/introduction/) to build native navigation using files in the `app/` directory.
+Este projeto utiliza [`expo-router`](https://docs.expo.dev/router/introduction/) para navegação baseada em arquivos na pasta `app/`.
 
-## 🚀 How to use
+## 📁 Estrutura de Pastas
 
-```sh
-npx create-expo-app -e with-router
+```
+app/
+	_layout.js         # Layout principal
+	novo.js            # Tela "Novo"
+	sobre.js           # Tela "Sobre"
+	(tabs)/            # Navegação por abas
+		_layout.js       # Layout das abas
+		config.js        # Configurações das abas
+		index.js         # Tela inicial das abas
+	item/
+		[id].js          # Tela de detalhes de item dinâmico
 ```
 
-## Deploy
+## 🚀 Como rodar o projeto
 
-Deploy on all platforms with Expo Application Services (EAS).
+1. Instale as dependências:
+   ```sh
+   npm install
+   ```
+2. Inicie o projeto:
+   ```sh
+   npx expo start
+   ```
 
-- Deploy the website: `npx eas-cli deploy` — [Learn more](https://docs.expo.dev/eas/hosting/get-started/)
-- Deploy on iOS and Android using: `npx eas-cli build` — [Learn more](https://expo.dev/eas)
+## 📦 Deploy
 
-## 📝 Notes
+Você pode fazer deploy em todas as plataformas com o Expo Application Services (EAS):
 
-- [Expo Router: Docs](https://docs.expo.dev/router/introduction/)
+- Deploy web: `npx eas-cli deploy` — [Saiba mais](https://docs.expo.dev/eas/hosting/get-started/)
+- Build iOS/Android: `npx eas-cli build` — [Saiba mais](https://expo.dev/eas)
+
+## 📝 Links úteis
+
+- [Documentação do Expo Router](https://docs.expo.dev/router/introduction/)
